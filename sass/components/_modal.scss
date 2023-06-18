@@ -56,18 +56,26 @@
 
     &__title {
         font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-bottom: 12px;
-    margin-top: 2px;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 12px;
+        margin-top: 2px;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
+    }
+
+    &__icon {
+        display: flex;
+        position: absolute;
+        fill: #212121;
+        margin-top: 12px;
+        margin-left: 11px;
     }
 
     &__label {
@@ -82,10 +90,6 @@
         padding-bottom: 4px;
         margin: 10px 40px 10px 40px;
 
-        & p {
-            padding-bottom: 4px;
-        }
-
         &--comment {
             max-height: 138px;
             display: block;
@@ -98,9 +102,6 @@
             color: #757575;
             margin: 10px 40px 10px 40px;
 
-            & p {
-                padding-bottom: 4px;
-            }
         }
         
         &--policy {
@@ -118,15 +119,15 @@
             margin-bottom: 30px;
 
             & p {
-                padding-bottom: 4px;
+                padding-bottom: 0px;
+                padding-left: 7px;
             }
 
             & a {
                 text-decoration: underline;
                 color: #2196F3;
+            }
         }
-        
-    }
 
     &__input {
         display: block;
@@ -134,24 +135,17 @@
         max-height: 100%;
         position: relative;
         margin-bottom: 10px;
+        margin-top: 10px;
 
         &:hover svg {
             border-color: #2196F3;
             fill: #2196F3;
         }
-
-        &--field {
-            height: 40px;
-            padding-left: 42px;
-        }
-    }
-
-    &__icon {
-        display: flex;
-        position: absolute;
-        fill: #212121;
-        margin-top: 12px;
-        margin-left: 11px;
     }
 }
+}
+
+.modal__input:hover svg {
+    border-color: #2196F3;
+    fill: #2196F3;
 }
